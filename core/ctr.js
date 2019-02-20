@@ -3,11 +3,7 @@
  * @author Torben Haase
  */
 
-if (sjcl.beware === undefined) {
-  sjcl.beware = {};
-}
-sjcl.beware["CTR mode is dangerous because it doesn't protect message integrity."
-] = function() {
+
   /**
    * Dangerous: CTR mode.
    * @namespace
@@ -71,4 +67,3 @@ sjcl.beware["CTR mode is dangerous because it doesn't protect message integrity.
       return sjcl.bitArray.clamp(d, bl);
     }
   };
-};
